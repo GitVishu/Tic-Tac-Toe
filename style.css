@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    height: 100vh;
+    /* width: 100vw; */
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#main{
+    top: 50%;
+    left: 50%;
+    position: absolute; 
+    transform: translate(-50%,-50%);
+    /* height: 100vh; */
+}
+#container{
+    height: 70vmin;
+    width: 70vmin;
+    /* text-justify: auto; */
+    text-align: center;
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vmin ;
+}
+#heading{
+    margin-top: 10px ;
+    margin-bottom: 30px;
+    background-color: #0a0027;
+    border: 2px solid #0a0027;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 7vmin;
+}
+.btn{
+    height: 22vmin;
+    width: 22vmin;
+    background-color: rgba(255, 255, 255, 0.603);
+    /* border: solid  red 2px; */
+    border-radius: 5px;
+    font-size: 12vmin;
+    /* text-justify: auto; */
+    /* text-align: justify; */
+    color: #8b2f8be0;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+}
+#playAgain{
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  /* position: relative; */
+  margin: 1em auto 0 auto;
+  display: block;
+}
+.popup {
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+#newGame{
+    font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+#sampleMsg {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+  }
+.popup.hide {
+    display: none;
+}
